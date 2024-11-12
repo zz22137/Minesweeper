@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 1rem;
+  background-color: black;
+  color: gold;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.navbar a:hover {
+  color:gold;
+}
+
+.grid {
+  display: inline-block;
+  margin: 1rem auto;
+  border: 1px solid #999;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #eee;
+  transition: background-color 0.2s ease;
+}
+
+.cell.safe {
+  background-color: #a0e7e5;
+}
+
+.cell.mine {
+  background-color: #f28b82;
+  color: #fff;
+}
